@@ -32,7 +32,7 @@ def load_candidate_by_id(candidates_list, candidate_id):
 
 
 def load_candidate_by_skill(candidates_list, candidate_skill):
-    """ агрузка кандидата по определенному навыку"""
+    """ загрузка кандидата по определенному навыку"""
     result = []
     for candidate in candidates_list:
         candidate_skills = candidate['skills'].lower().split(", ")
