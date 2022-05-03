@@ -1,0 +1,118 @@
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [03/May/2022 21:04:38] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2022 21:04:39] "GET /static/style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2022 21:04:39] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [03/May/2022 21:04:42] "GET /?s=jjj HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2022 21:04:42] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [03/May/2022 22:58:45] "GET /?s=ага HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2022 22:58:45] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [03/May/2022 23:00:23] "GET /?s=ага HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2022 23:00:23] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [03/May/2022 23:03:06] "GET /?s=ага HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2022 23:03:06] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [03/May/2022 23:07:05] "GET /?s=ага HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2022 23:07:05] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [03/May/2022 23:07:09] "GET /?s=ага HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2022 23:07:09] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+ERROR:app:Exception on /search [GET]
+Traceback (most recent call last):
+  File "D:\lesson 8.2\venv\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\lesson 8.2\venv\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\lesson 8.2\venv\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\lesson 8.2\venv\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "D:\lesson12_project_source_v3-master\main\views.py", line 18, in search_page
+    s = request.arg.get("s", "")
+AttributeError: 'Request' object has no attribute 'arg'
+INFO:werkzeug:127.0.0.1 - - [03/May/2022 23:07:19] "[35m[1mGET /search HTTP/1.1[0m" 500 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [03/May/2022 23:07:23] "GET /?s=ага HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2022 23:07:23] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [03/May/2022 23:17:35] "GET /?s=ага HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2022 23:17:35] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [03/May/2022 23:18:13] "GET /?s=ага HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2022 23:18:13] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [03/May/2022 23:20:50] "GET /?s=ага HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2022 23:20:50] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [03/May/2022 23:21:33] "GET /?s=ага HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2022 23:21:33] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [03/May/2022 23:26:04] "GET /?s=Утром HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2022 23:26:04] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [03/May/2022 23:26:05] "GET /?s= HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2022 23:26:05] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [03/May/2022 23:28:55] "GET /?s=ага HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2022 23:28:55] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [03/May/2022 23:32:32] "GET /?s=ага HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2022 23:32:32] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [03/May/2022 23:33:04] "GET /?s=ага HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2022 23:33:04] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [03/May/2022 23:33:06] "GET /?s=ага HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2022 23:33:06] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [03/May/2022 23:40:59] "GET /?s=ага HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2022 23:40:59] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [03/May/2022 23:41:48] "GET /?s=утром HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2022 23:41:48] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [03/May/2022 23:41:49] "GET /?s= HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2022 23:41:49] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [03/May/2022 23:41:53] "GET /?s=ага HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2022 23:41:53] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [03/May/2022 23:57:58] "GET /?s=ага HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2022 23:57:58] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [03/May/2022 23:57:59] "GET /?s= HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2022 23:57:59] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [03/May/2022 23:59:34] "GET /?s= HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2022 23:59:35] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [03/May/2022 23:59:38] "GET /?s=ага HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2022 23:59:38] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [04/May/2022 00:00:43] "GET /?s=ага HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/May/2022 00:00:43] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [04/May/2022 00:03:23] "GET /?s=ага HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/May/2022 00:03:23] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [04/May/2022 00:25:29] "GET /?s=ага HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/May/2022 00:25:29] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [04/May/2022 00:26:22] "GET /?s=ага HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/May/2022 00:26:22] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
