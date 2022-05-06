@@ -1,12 +1,16 @@
 from flask import Blueprint, render_template, request
 import logging
-from main.utils import *
-from main.config import POST_PATH
+
+from utils import *
+
+from config import POST_PATH
+
 from exceptions import *
 
 main_blueprint = Blueprint("main_blueprint", __name__, template_folder="templates")
 
 logging.basicConfig(filename="logger.log", level=logging.INFO)
+
 
 @main_blueprint.route("/")
 def main_page():
@@ -20,7 +24,7 @@ def search_page():
     logging.info("Выполняется поиск")
     try:
         posts = load_json_data(POST_PATH)
-    except
-        return "Проблема с открытием файла потов"
+    except DataJsonError:
+        return "Проблема с открытием файла постов"
     filtered_posts = search_post_by_substring(posts, s)
-    return render_template("post_list.html", posts=filtered_posts, s=s)
+    return render_template('post_list.html', posts=filtered_posts, s=s)
