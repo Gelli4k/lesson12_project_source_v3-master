@@ -1,10 +1,7 @@
 from flask import Blueprint, render_template, request
 import logging
-
-from utils import *
-
+from utils_main import *
 from config import POST_PATH
-
 from exceptions import *
 
 main_blueprint = Blueprint("main_blueprint", __name__, template_folder="templates")
@@ -16,7 +13,7 @@ logging.basicConfig(filename="logger.log", level=logging.INFO)
 def main_page():
     logging.info("Открытие главной страницы")
     return render_template("index.html")
-
+''' вывод формы на главной странице при обращении к / использованием шаблона index.html'''
 
 @main_blueprint.route("/search")
 def search_page():
@@ -27,4 +24,5 @@ def search_page():
     except DataJsonError:
         return "Проблема с открытием файла постов"
     filtered_posts = search_post_by_substring(posts, s)
-    return render_template('post_list.html', posts=filtered_posts, s=s)
+    return render_template("post_list.html", posts=filtered_posts, s=s)
+'''  поиск и вывод постов при обращении на `/search/?s=<ключ поиска> с использованием шаблон `post_list.html` !'''

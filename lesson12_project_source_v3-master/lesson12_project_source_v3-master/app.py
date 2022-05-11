@@ -1,9 +1,9 @@
 import logging
 
 from flask import Flask, render_template, send_from_directory
-# from functions import ...
-from main.views import main_blueprint
-from loader.views import loader_blueprint
+
+from views_main import main_blueprint
+from views_loader import loader_blueprint
 
 app = Flask(__name__)
 
@@ -21,6 +21,6 @@ def bad_request_error(error):
 def static_dir(path):
     return send_from_directory("uploads", path)
 
+
 if __name__ == "__main__":
     app.run()
-

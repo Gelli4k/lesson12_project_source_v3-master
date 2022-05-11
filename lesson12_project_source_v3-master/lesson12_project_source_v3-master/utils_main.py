@@ -8,15 +8,13 @@ def load_json_data(path):
             return json.load(file)
     except(FileNotFoundError, json.JSONDecodeError):
         raise DataJsonError
+''' реализовано чтение из файла и вывод ошибки'''
 
-
-def search_post_by_substring(substring, path):
-    posts = load_json_data(path)
+def search_post_by_substring(posts, substring):
     posts_founded = []
     for post in posts:
         if substring.lower() in post["content"].lower():
             posts_founded.append(post)
     return posts_founded
 
-# print(load_json_data('../lesson12_project_source_v3-master/posts.json'))
-# print(search_post_by_substring('Ага', '../lesson12_project_source_v3-master/posts.json'))
+''' реализован поиск по подстроке'''
